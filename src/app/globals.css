@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-shabnam: "Shabnam", sans-serif;
+  --font-iranian: "Iranian", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  /* background: var(--background); */
+  font-family: var(--font-shabnam);
+  position: relative;
+  z-index: 1;
+}
+
+.back-circle {
+  background: rgb(128, 93, 147);
+  background: radial-gradient(
+    circle,
+    rgba(128, 93, 147, 1) 0%,
+    rgba(128, 93, 147, 0) 35%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  animation: gradient 10s ease infinite;
+  opacity: 0.5;
+}
+
+@keyframes gradient {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* calender  */
+
+.css-1nxbkmn-MuiPickersCalendarHeader-root {
+  position: relative;
+  padding: 0 !important;
+}
+.css-18oku22-MuiPickersCalendarHeader-labelContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.css-15umtxl-MuiPickersArrowSwitcher-root {
+  position: absolute;
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.css-z4ns9w-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button {
+  right: 14px;
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+.css-17nrfho-MuiButtonBase-root-MuiIconButton-root-MuiPickersArrowSwitcher-button {
+  left: 14px;
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+.css-1etsrfk-MuiPickersFadeTransitionGroup-root {
+  transition: all 0.5s ease !important;
+}
+
+.css-1mh0pvx-MuiFormHelperText-root.Mui-error,
+.custom-error-message {
+  bottom: -24px;
+  left: 0;
+  position: absolute;
+  color: #db504a;
+}
+.resume-error-message {
+  bottom: -20px;
+  right: 20px !important;
+  position: absolute;
+  color: #db504a;
+}
+
+/* calender 2  */
+.rmdp-container {
+  width: 100% !important;
+}
+.rmdp-container input {
+  width: 100% !important;
+  height: 55px !important;
+  border-radius: 4px;
+  color: #171717;
+}

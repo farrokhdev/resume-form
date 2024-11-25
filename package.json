@@ -1,0 +1,41 @@
+{
+  "name": "resume",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@hookform/resolvers": "^3.9.1",
+    "@mui/icons-material": "^6.1.8",
+    "@mui/lab": "^6.0.0-beta.16",
+    "@mui/material": "^6.1.8",
+    "@mui/x-date-pickers": "^7.22.3",
+    "autoprefixer": "^10.4.20",
+    "dayjs": "^1.11.13",
+    "framer-motion": "^11.11.17",
+    "jalaliday": "^2.3.0",
+    "next": "15.0.3",
+    "notistack": "^3.0.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-dropzone": "^14.3.5",
+    "react-hichestan-datetimepicker": "^3.0.24",
+    "react-hook-form": "^7.53.2",
+    "react-multi-date-picker": "^4.5.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5"
+  }
+}
