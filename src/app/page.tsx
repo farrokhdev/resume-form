@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Header from "@/components/Header";
 import ResForm from "@/components/res-form";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme, ThemeProvider } from "@mui/material";
 
 import Image from "next/image";
 
